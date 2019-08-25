@@ -1,5 +1,7 @@
 #include "nodoarbol.h"
 
+using namespace std;
+
 nodoarbol::nodoarbol(std::string auxnombre){
     nombre = auxnombre;
     hijoderecho = NULL;

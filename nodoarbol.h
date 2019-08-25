@@ -1,6 +1,11 @@
+#ifndef NODOARBOL_H
+#define NODOARBOL_H
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string>
+
+using namespace std;
 
 class nodoarbol
 {
@@ -9,6 +14,7 @@ private:
     nodoarbol *hijoizquierdo;
     nodoarbol *hijoderecho;
 public:
+    
     nodoarbol(std::string auxnombre);
     std::string getNombre();
     nodoarbol *getHijoDerecho();
@@ -17,3 +23,5 @@ public:
     void setHijoDerecho(nodoarbol *auxhijoderecho);
     void setHijoIzquierdo(nodoarbol *auxhijoizquierdo);
 };
+
+#endif // NODOARBOL_H
