@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
-#include "arbol.h"
+//#include "arbol.h"
+#include "graficar.h"
 
 using namespace std;
 
@@ -26,7 +27,11 @@ int main(){
             std::string valor;
             std::cin >> valor;
             arbol_n->Eliminar(valor);
+        }else if(opcion == 3)
+        {
+            graficar *gra = new graficar(arbol_n);
         }
+        
     }
     return 1;
 }

@@ -1,0 +1,20 @@
+digraph{
+subgraph clusterArbol{
+node[shape=record]
+ar[label="<f0>|<f1>luigi|<f2>"];
+arI[label="<f0>|<f1>hammer|<f2>"];
+arII[label="<f0>|<f1>fermin|<f2>"];
+arIII[label="<f0>|<f1>edd|<f2>"];
+arIIII[label="<f0>|<f1>Boo|<f2>"];
+arIIIID[label="<f0>|<f1>Kamek|<f2>"];
+arD[label="<f0>|<f1>star|<f2>"];
+arDD[label="<f0>|<f1>whomp|<f2>"];
+ar:<f2>->arD:<f1>;
+ar:<f0>->arI:<f1>;
+arI:<f0>->arII:<f1>;
+arII:<f0>->arIII:<f1>;
+arIII:<f0>->arIIII:<f1>;
+arIIII:<f2>->arIIIID:<f1>;
+arD:<f2>->arDD:<f1>;
+}
+}

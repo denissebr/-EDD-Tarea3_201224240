@@ -56,9 +56,9 @@ void arbol::Eliminar(std::string nombre){
         {
             padre = actual;
             if(strcmp(actual->getNombre().c_str(), nombre.c_str()) > 0){
-                actual = actual->getHijoDerecho();
-            }else{
                 actual = actual->getHijoIzquierdo();
+            }else{
+                actual = actual->getHijoDerecho();
             }
         }
 
