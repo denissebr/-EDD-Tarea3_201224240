@@ -12,4 +12,5 @@ public:
     void Insertar_arbol(nodoarbol *nuevo);
     nodoarbol *getRaiz();
     bool Existe_n(std::string nombre, nodoarbol *auxraiz);
+    void Eliminar(std::string nombre);
 };
